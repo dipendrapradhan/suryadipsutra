@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Tree</title>
+  <style>
+    /* General Styles */
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa; /* Light teal background */
+      color: #333;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    h2 {
+      font-size: 2em;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .family-tree {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hierarchical Styling */
+    .generation {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .generation h3 {
+      font-size: 1.3em;
+      color: #555;
+      cursor: pointer;
+      padding: 10px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    
+     li {
+      list-style-type: none;
+    }
+
+    .person {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+      padding: 5px 0;
+      display: inline-block;
+    }
+
+    /* Lines connecting each generation */
+    .generation ul ul {
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .generation ul ul::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      border-left: 2px solid #ddd;
+      height: 100%;
+    }
+
+    /* Dropdown Menu Styling */
+    .dropdown-container {
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .dropdown-container select {
+      padding: 8px;
+      font-size: 1em;
+    }
+    
+    /* Scroll behavior */
+    html {
+  scroll-behavior: smooth;
+}
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+    
+    
+  .Explore-family-tree a {
+  display: inline-block;
+  padding: 12px 15px; /* Reduced padding for better fit on small screens */
+  background-color: #d4edda;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em; /* Slightly smaller font size for better scaling */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 100%; /* Full-width on smaller screens */
+  max-width: 300px; /* Limit width on larger screens */
+  margin: 10px auto; /* Center the button on all devices */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+    .Explore-family-tree a:hover {
+      background-color: #c3e6cb;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+
+<div class="Explore-family-tree">
+  <p><center>ॐ पूर्णमदः पूर्णमिदम् पूर्णात् पूर्णमुदच्यते | पूर्णस्य पूर्णमादाय पूर्णमेवावशिष्यते || ॐ शान्तिः शान्तिः शान्तिः ||</center></p><hr>
+  
+  <center>
+    <p><a href="https://suryadipsutra.blogspot.com/p/jujurman-shrestha.html">Click here to begin and explore the family of<br><br>Jujurman Shrestha</a>
+  </p>
+  </center>
+</div><hr>
+  
+  <center><p>Select specific person from browse box below. Scroll down to see family tree.</p></center>
+  <div class="dropdown-container"><center>
+  <label for="page-select"></label>
+  <select id="page-select" onchange="navigateToPage()">
+    <option value="">Select person</option>
+    <option value="https://suryadipsutra.blogspot.com/p/bishnu-kumar-shrestha.html">Bishnu Kumar Shrestha</option>
+    <option value="https://suryadipsutra.blogspot.com/p/dil-bahadur-pradhan.html">Dil Bahadur Pradhan</option>
+    <option value="https://suryadipsutra.blogspot.com/p/sanjib-shrestha.html">Sanjib Shrestha</option>
+     <option value="https://suryadipsutra.blogspot.com/p/dipendra-pradhan.html">Dipendra Pradhan</option>
+    <option value="https://suryadipsutra.blogspot.com/p/anureet-purnascha-pradhan.html">Anureet Purnascha Pradhan</option>
+  </select></center>
+    </div>
+<hr>
+<h2>Family Tree of Jujurman Shrestha</h2>
+<div class="family-tree">
+  <div class="generation">
+    <h3>Jujurman Shrestha (Generation-1)</h3>
+    <ul>
+      <li><span class="person">Surya Narayan Shrestha (G2)</span>
+        <ul>
+          <li><span class="person">Bhajbir</span>
+            <ul>
+              <li><span class="person"><a href="#chandrabir-section">Chandrabir (See below)</a></span>
+                <ul>
+                  <li><span class="person">Bishnu</span></li>
+                  <li><span class="person">Kedar</span></li>
+                  <li><span class="person">Ratna</span></li>
+                  <li><span class="person">Aswin</span></li>
+                </ul>
+              </li>
+              <li><span class="person">Jagat Bahadur</span>
+                <ul>
+                  <li><span class="person">Mohan Lal (#)</span></li>
+                </ul>
+              </li>
+              <li><span class="person">Bal Bahadur</span>
+                <ul>
+                  <li><span class="person"><a href="#narayanprasad-section">Narayan Prasad (See below)</a></span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><span class="person">Bhim Narayan Shrestha (G2)</span>
+        <ul>
+          <li><span class="person">Bakhan Singh</span>
+            <ul>
+              <li><span class="person">Devinarayan</span>
+              <ul>
+                <li><span class="person">Kajiman</span></li>
+                <li><span class="person">Harkaman</span></li>
+                </ul>
+              </li>
+              <li><span class="person">Antanarayan</span>
+              <ul>
+                <li><span class="person"></span></li>
+                </ul>
+              </li>
+              <li><span class="person">Jorman</span>
+              <ul>
+                <li><span class="person">Tukuman</span></li>
+                <li><span class="person">Ratnaman</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 id="chandrabir-section">Family Tree of Chandrabir Shrestha</h2>
+<div class="family-tree">
+  <div class="generation">
+    <h3>Chandrabir Shrestha (Generation-4)</h3>
+    <ul>
+      <li><span class="person"><a href="https://suryadipsutra.blogspot.com/p/bishnu-kumar-shrestha.html">Bishnu kumar shrestha</a></span>
+      <ul>
+        <li><span class="person">Bal Kumar Shrestha</span>
+          <ul>
+            <li><span class="person">Manju Shrestha</span></li>
+            <li><span class="person">Anjan Shrestha</span></li>
+            <li><span class="person">Ranjan Shrestha</span></li>
+            <li><span class="person">Niranjan Shrestha</span></li>
+          </ul>
+        </li>
+        <li><span class="person"><a href="https://suryadipsutra.blogspot.com/p/purna-kumar-shrestha.html">Purna Kumar Shreshta</a></span>
+        <ul><li><span class="person">Sarmila Shrestha</span></li>
+          <li><span class="person">Santosh Shrestha</span>
+          <ul>
+            <li><span class="person">Bisan</span></li>
+            </ul>
+          </li>
+          <li><span class="person">Amrita Shrestha</span></li>
+          <li><span class="person">Dinesh Shrestha</span>
+          <ul>
+            <li><span class="person">Divijan</span></li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        <li><span class="person">Nirmal Shrestha</span>
+        <ul>
+          <li><span class="person">Sanjib Shrestha</span>
+          <ul>
+            <li><span class="person">Ganga Shrestha</span></li>
+            <li><span class="person">Jamuna Shrestha</span></li>
+            <li><span class="person">Ujjwal Shrestha</span></li>
+          </ul>
+          </li>
+          <li><span class="person">Goma Shrestha</span></li>
+          </ul>
+        </li>
+        <li><span class="person"><a href="https://suryadipsutra.blogspot.com/p/dil-bahadur-pradhan.html">Dil Bahadur Pradhan</a></span>
+        <ul>
+          <li><span class="person"><a href="https://suryadipsutra.blogspot.com/p/dipendra-pradhan.html">Dipendra Pradhan</a></span>
+          <ul>
+            <li><span class="person"><a href="https://suryadipsutra.blogspot.com/p/anureet-purnascha-pradhan.html?m=1">Anureet</a></span></li>
+            </ul>
+          </li>
+          <li><span class="person">Durga Pradhan</span></li>
+          </ul>
+        </li>
+        <li><span class="person">Amrit Shrestha (##)</span></li>
+      </ul>
+      </li>
+      <li><span class="person">Kedarman shrestha</span>
+      <ul>
+        <li><span class="person">Chandra kumar</span>
+        <ul>
+          <li><span class="person">Ganesh</span>
+          <ul>
+            <li><span class="person">Aenik</span></li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        <li><span class="person">Santa kumar</span>
+        <ul>
+          <li><span class="person">Sujan</span>
+          <ul>
+            <li><span class="person">Hewan</span></li>
+            </ul>
+          </li>
+          <li><span class="person">Suraj</span></li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      <li><span class="person">Ratnaman shrestha</span>
+      <ul>
+        <li><span class="person">Shyam Kumar</span>
+        <ul>
+          <li><span class="person">Roman</span></li>
+          <li><span class="person">Suman</span></li>
+          <li><span class="person">Pawan</span></li>
+          </ul>
+        </li>
+        <li><span class="person">Yadav Kumar</span>
+        <ul>
+          <li><span class="person">Sujan</span></li>
+          <li><span class="person">Rijan</span></li>
+          <li><span class="person">Yasil</span></li>
+          </ul>
+        </li>
+        <li><span class="person">Durga lal</span></li>
+        </ul>
+      </li>
+      <li><span class="person">Aswin kumar shrestha</span>
+      <ul>
+         <li><span class="person">Madhu sudan</span>
+        <ul>
+          <li><span class="person">Subham</span></li>
+           </ul>
+        </li>
+        <li><span class="person">Dhan Kumar</span>
+        <ul>
+          <li><span class="person">Bharat</span></li>
+          </ul>
+        </li>
+        <li><span class="person">Hari narayan</span>
+        <ul>
+          <li><span class="person">Saurav</span></li>
+          <li><span class="person">Sujal</span></li>
+          </ul>
+        </li>
+        <li><span class="person">Sambhu lal</span></li>
+        <li><span class="person">Thakur raj</span></li>
+        </ul>
+      </li>          
+    </ul>
+  </div>
+</div>
+  
+  <h2 id="narayanprasad-section">Family Tree of Narayan Prasad Shrestha</h2>
+<div class="family-tree">
+  <div class="generation">
+    <h3>Narayan Prasad Shrestha (Generation-5)</h3>
+    <ul>
+       <li><span class="person">Motilal Shrestha</span>
+      <ul>
+         <li><span class="person">Saroj</span>
+        <ul>
+           <li><span class="person">Success</span></li>
+           </ul>
+        </li>
+         <li><span class="person">Buddhiman</span>
+           <ul>
+         <li><span class="person">Alex</span></li>
+           </ul>
+        </li>
+         </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  // JavaScript function to navigate to selected page
+  function navigateToPage() {
+    const select = document.getElementById('page-select');
+    const url = select.value;
+    if (url) {
+      window.location.href = url;
+    }
+  }
+
+  // JavaScript to toggle visibility of each generation when the header is clicked
+  document.querySelectorAll('.generation h3').forEach(header => {
+    header.addEventListener('click', () => {
+      const list = header.nextElementSibling;
+      list.style.display = list.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
+
+<hr>
+<b>Symbols meaning:</b><br># : No further lineage available or known.<br>
+## : No contact available yet<hr>
+   <footer>
+    © 2025 Jujurman Family Records | All rights reserved.|<br>
+  All details are as per the latest availabe datas.<br>
+  Maintained and updated by Dr. Kalinkaar Dipendra</footer>
+</body>
+</html>
